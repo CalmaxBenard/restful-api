@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cool Cafes</title>
+</head>
+<body>
+    <h1>Best Cafes to Work From</h1>
+
+    <ul>
+        {% for cafe in cafes %}
+        <li>{{cafe.name}} - {{cafe.location }} - <a href="{{ cafe.map_url }}">Map</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
